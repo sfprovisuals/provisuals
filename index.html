@@ -1,1 +1,300 @@
-hello worlds
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ProVisuals — Visual Content Designer & Photographer</title>
+  <meta name="description" content="ProVisuals — Marketing visuals, photography, motion & short-form video for brands and startups. Freelance / contract." />
+
+  <style>
+    :root{
+      --bg:#fff;
+      --text:#111;
+      --muted:#666;
+      --line:#e9e9e9;
+      --max:1100px;
+      --radius:14px;
+    }
+    *{ box-sizing:border-box; }
+    html,body{ margin:0; padding:0; background:var(--bg); color:var(--text); }
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a{ color:inherit; text-decoration: underline; text-underline-offset: 3px; }
+    a:hover{ opacity:.75; }
+    .wrap{ max-width: var(--max); margin: 0 auto; padding: 28px 18px; }
+    header{ border-bottom:1px solid var(--line); }
+    .hero{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:18px;
+      padding: 18px 0 14px;
+      flex-wrap: wrap;
+    }
+    h1{ margin:0; font-size:40px; line-height:1.1; letter-spacing:-0.02em; }
+    .lead{ margin:10px 0 8px; font-size:16px; color:var(--muted); max-width: 70ch; }
+    .meta{
+      margin:0; font-size:14px; color:var(--muted);
+      display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+    }
+    .dot{ color:var(--line); }
+    .cta{ display:flex; gap:10px; flex-wrap:wrap; }
+    .btn{
+      display:inline-block; padding:10px 14px; border:1px solid var(--text);
+      text-decoration:none; font-size:14px; border-radius: 999px;
+    }
+    .btn.ghost{ border-color: var(--line); color: var(--muted); }
+    main section{ padding: 28px 0; border-bottom: 1px solid var(--line); }
+    h2{ margin:0 0 10px; font-size: 18px; letter-spacing: 0.02em; }
+    .sub{ margin:0 0 16px; font-size:14px; color:var(--muted); max-width: 78ch; }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 12px;
+    }
+    figure{ margin:0; }
+    .tile{
+      grid-column: span 6;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow:hidden;
+      background:#fafafa;
+    }
+    .tile img{
+      width:100%; height:auto; display:block;
+    }
+    .tile .cap{
+      padding:10px 12px;
+      font-size:13px;
+      color: var(--muted);
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+    .case{
+      padding: 16px 0 6px;
+      border-top: 1px solid var(--line);
+    }
+    .case:first-of-type{ border-top: 0; padding-top: 0; }
+    .case-head{
+      display:flex; align-items:baseline; justify-content:space-between; gap:14px; flex-wrap:wrap;
+      margin-bottom: 8px;
+    }
+    h3{ margin:0; font-size: 16px; }
+    .tags{ margin:0; font-size: 13px; color: var(--muted); }
+    .desc{
+      margin: 8px 0 14px;
+      font-size: 14px;
+      max-width: 85ch;
+    }
+    .list{ margin:0; padding-left:18px; }
+    .list li{ margin: 8px 0; }
+    .card{
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      max-width: 78ch;
+      background: #fff;
+    }
+    .two{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      align-items: start;
+    }
+    .pillrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+    .pill{
+      border:1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 13px;
+      color: var(--muted);
+      background:#fff;
+    }
+    .video{
+      grid-column: span 12;
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      overflow:hidden;
+      background:#000;
+      aspect-ratio: 16 / 9;
+    }
+    .video iframe, .video video{
+      width:100%; height:100%; display:block; border:0;
+    }
+    footer{ padding: 22px 0 10px; color: var(--muted); font-size: 13px; }
+    .note{ font-size: 12px; color: var(--muted); margin-top: 10px; }
+
+    @media (max-width: 860px){
+      h1{ font-size: 34px; }
+      .tile{ grid-column: span 12; }
+      .two{ grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="hero">
+        <div>
+          <h1>ProVisuals</h1>
+          <p class="lead">Visual Content Designer & Photographer — marketing visuals, photography, motion & short-form video for brands and startups.</p>
+          <p class="meta">
+            <a href="mailto:you@email.com">you@email.com</a>
+            <span class="dot">•</span>
+            <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noreferrer">LinkedIn</a>
+            <span class="dot">•</span>
+            <a href="https://www.behance.net/proassets" target="_blank" rel="noreferrer">Behance (Design/Motion)</a>
+            <span class="dot">•</span>
+            <a href="https://youpic.com/yourprofile" target="_blank" rel="noreferrer">YouPic (Photo)</a>
+          </p>
+          <div class="pillrow">
+            <span class="pill">SF Bay Area • Remote</span>
+            <span class="pill">Freelance / Contract</span>
+            <span class="pill">Fast turnaround</span>
+          </div>
+        </div>
+
+        <div class="cta">
+          <a class="btn" href="#contact">Hire me</a>
+          <a class="btn ghost" href="#work">View work</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- PHOTOGRAPHY -->
+    <section id="photo">
+      <h2>Photography</h2>
+      <p class="sub">High-end commercial work: product, lifestyle, portraits. Replace the image files inside <strong>assets/</strong>.</p>
+
+      <div class="grid">
+        <!-- Replace these with your best 6–9 images -->
+        <figure class="tile"><img src="assets/photo-01.jpg" alt="Photography 01"><figcaption class="cap">Product / brand</figcaption></figure>
+        <figure class="tile"><img src="assets/photo-02.jpg" alt="Photography 02"><figcaption class="cap">Lifestyle</figcaption></figure>
+        <figure class="tile"><img src="assets/photo-03.jpg" alt="Photography 03"><figcaption class="cap">Portrait</figcaption></figure>
+        <figure class="tile"><img src="assets/photo-04.jpg" alt="Photography 04"><figcaption class="cap">Product detail</figcaption></figure>
+        <figure class="tile"><img src="assets/photo-05.jpg" alt="Photography 05"><figcaption class="cap">Brand moment</figcaption></figure>
+        <figure class="tile"><img src="assets/photo-06.jpg" alt="Photography 06"><figcaption class="cap">Campaign shot</figcaption></figure>
+      </div>
+
+      <p class="note">Tip: Keep only your strongest work here. Less is more.</p>
+    </section>
+
+    <!-- SELECTED WORK / CASES -->
+    <section id="work">
+      <h2>Marketing Visuals & Motion</h2>
+      <p class="sub">Selected projects with a simple SF-style structure: goal → what I did → deliverables. Keep it short and visual.</p>
+
+      <article class="case">
+        <div class="case-head">
+          <h3>Project Title — Campaign creative assets</h3>
+          <p class="tags">Marketing Visuals • Social • Ads</p>
+        </div>
+        <p class="desc">
+          <strong>Goal:</strong> Produce a consistent set of campaign visuals for paid + organic channels.<br>
+          <strong>What I did:</strong> Styleframes, layouts, motion variations, export-ready files.<br>
+          <strong>Deliverables:</strong> Social creatives, ad formats, animated assets.
+        </p>
+
+        <div class="grid">
+          <figure class="tile"><img src="assets/design-01.jpg" alt="Design 01"><figcaption class="cap">Styleframe</figcaption></figure>
+          <figure class="tile"><img src="assets/design-02.jpg" alt="Design 02"><figcaption class="cap">Ad variation</figcaption></figure>
+          <figure class="tile"><img src="assets/design-03.jpg" alt="Design 03"><figcaption class="cap">Motion frame</figcaption></figure>
+          <figure class="tile"><img src="assets/design-04.jpg" alt="Design 04"><figcaption class="cap">Export set</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-head">
+          <h3>Project Title — Product / web visuals</h3>
+          <p class="tags">Visual Design • Web • Brand Assets</p>
+        </div>
+        <p class="desc">
+          <strong>Goal:</strong> Upgrade product visuals for a landing page and launch materials.<br>
+          <strong>What I did:</strong> Key visuals, icon set, layout assets, visual consistency rules.<br>
+          <strong>Deliverables:</strong> Web sections, banners, supporting visuals.
+        </p>
+
+        <div class="grid">
+          <figure class="tile"><img src="assets/design-05.jpg" alt="Design 05"><figcaption class="cap">Key visual</figcaption></figure>
+          <figure class="tile"><img src="assets/design-06.jpg" alt="Design 06"><figcaption class="cap">Web section</figcaption></figure>
+          <figure class="tile"><img src="assets/design-07.jpg" alt="Design 07"><figcaption class="cap">Icon / system</figcaption></figure>
+          <figure class="tile"><img src="assets/design-08.jpg" alt="Design 08"><figcaption class="cap">Marketing asset</figcaption></figure>
+        </div>
+      </article>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video">
+      <h2>Short-form Video</h2>
+      <p class="sub">Use Vimeo/YouTube embeds or self-hosted MP4. Replace the iframe src with your link.</p>
+
+      <div class="grid">
+        <div class="video">
+          <!-- Replace with your Vimeo/YouTube embed -->
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Short-form video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <p class="note">Tip: Keep it 2–3 strong clips max. If needed, link out for more.</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Services</h2>
+      <p class="sub">Clear, production-focused (SF-friendly). No fluff, no over-promising.</p>
+
+      <div class="two">
+        <div class="card">
+          <strong>Core</strong>
+          <ul class="list">
+            <li>Marketing visuals & creative assets (social, ads, web)</li>
+            <li>Commercial photography (product, lifestyle, portraits)</li>
+            <li>Motion & animation assets (social + product)</li>
+            <li>Short-form video edits (social-ready)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>Ways to work</strong>
+          <ul class="list">
+            <li>Project-based delivery (fixed scope)</li>
+            <li>Weekly support (retainer)</li>
+            <li>Monthly contract (part-time)</li>
+          </ul>
+          <p class="note">Optional: add your typical availability or response time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="sub">Share scope, timeline, deliverables, and platform (web/social/ads). I’ll reply with availability and an estimate.</p>
+
+      <div class="card">
+        <p><strong>Email:</strong> <a href="mailto:you@email.com">you@email.com</a></p>
+        <p><strong>Location:</strong> SF Bay Area • Remote</p>
+        <p><strong>Status:</strong> Open for freelance / contract</p>
+        <p class="note">If you want: add a Calendly link here.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> ProVisuals</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
